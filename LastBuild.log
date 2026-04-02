@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2022.10.15.0" projectFile="C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Documentation1.shfbproj" started="31/03/2026 09:59:53">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2022.10.15.0" projectFile="C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Documentation1.shfbproj" started="02/04/2026 08:39:41">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
@@ -13,6 +13,7 @@ Website Table of Contents Generator Version 2022.10.15.0
 Copyright &#169; 2006-2022, Eric Woodruff, All Rights Reserved
 -------------------------------
 Clearing any prior web/markdown output...
+    Did not delete folder &#39;C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\.git&#39; as it contains read-only or hidden folders/files
 </buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
@@ -145,7 +146,7 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
@@ -153,10 +154,10 @@ Generating API filter for MRefBuilder...
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-54e2f2b2-4216-4fab-9d26-630ae048855f.proj]
-Build started 31/03/2026 09:59:53.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-2588f948-b123-4bd4-afa6-c2afbf3086e4.proj]
+Build started 02/04/2026 08:39:42.
 
-Project &quot;C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\GenerateRefInfo-54e2f2b2-4216-4fab-9d26-630ae048855f.proj&quot; on node 1 (default targets).
+Project &quot;C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\GenerateRefInfo-2588f948-b123-4bd4-afa6-c2afbf3086e4.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -167,30 +168,30 @@ GenerateRefInfo:
   Wrote information on 1 namespaces, 9 types, and 34 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\GenerateRefInfo-54e2f2b2-4216-4fab-9d26-630ae048855f.proj&quot; (default targets).
-    Last step completed in 00:00:01.5202
+Done Building Project &quot;C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\GenerateRefInfo-2588f948-b123-4bd4-afa6-c2afbf3086e4.proj&quot; (default targets).
+    Last step completed in 00:00:01.5174
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0084
+    Last step completed in 00:00:00.0080
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0052
+    Last step completed in 00:00:00.0073
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0042
+    Last step completed in 00:00:00.0034
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0123
+    Last step completed in 00:00:00.1217
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
 [C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateInheritedDocs.proj]
 
-    Last step completed in 00:00:01.0239
+    Last step completed in 00:00:00.9901
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -204,38 +205,38 @@ Generating conceptual topic files
     C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Content\VersionHistory\VersionHistory.aml -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\ddueXml\b7c64ed4-33dc-479c-815e-8f145d21a352.xml
     Parsing topic file &#39;C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Content\VersionHistory\v1.0.0.0.aml&#39;
     C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\ddueXml\15629107-3859-4b2e-a9d7-0cfccf7dd831.xml
-    Last step completed in 00:00:00.0227
+    Last step completed in 00:00:00.0194
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into reference topic manifest file
-    Last step completed in 00:00:00.0062
+    Last step completed in 00:00:00.0021
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\Users\michaelb\source\repos\JsonDOM\Documentation1\css\Custom.css -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\Output\Website\css\Custom.css
 C:\Users\michaelb\source\repos\JsonDOM\Documentation1\icons\Help.png -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\Output\Website\icons\Help.png
 C:\Users\michaelb\source\repos\JsonDOM\Documentation1\icons\Cloud logo 534x534 white on transparent.gif -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\Output\Website\icons\Cloud logo 534x534 white on transparent.gif
-    Last step completed in 00:00:00.0121
+    Last step completed in 00:00:00.0175
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0011
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0067
+    Last step completed in 00:00:00.0066
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.0504
+    Last step completed in 00:00:00.0484
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0019
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -245,7 +246,7 @@ C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\BuildAssemble
   Updating conceptual topic configurations.
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0040
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -265,7 +266,7 @@ CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 o
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 3 of 30.
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:02.0813
+</plugIn>    Last step completed in 00:00:01.8692
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -301,26 +302,26 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Defaul
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\Output\Website\SearchHelp.inc.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\Output\Website\SearchHelp.php
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; C:\Users\michaelb\source\repos\JsonDOM\Documentation1\Help\Working\Output\Website\Web.Config
-    Last step completed in 00:00:00.0921
+    Last step completed in 00:00:00.0840
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.0370
+    Last step completed in 00:00:00.0369
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 129 files for the website content
-    Last step completed in 00:00:00.1483
+    Last step completed in 00:00:00.1733
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0365
+    Last step completed in 00:00:00.0291
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 31/03/2026 09:59:58.  Total time: 00:00:05.8051
+Build completed successfully at 02/04/2026 08:39:47.  Total time: 00:00:05.8832
 
 </buildStep>
 </shfbBuild>
