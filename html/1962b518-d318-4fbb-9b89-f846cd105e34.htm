@@ -42,54 +42,54 @@
 					Unlike some other JSON-related libraries, JsonDOM will handle both of these options with equal ease.
 				</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Data types</h2><div id="IDCABSection"><p>
 					The assembly exposes just two main classes
-					(<a href="100c332d-882f-4bd5-3f0f-96e5e924b21a.htm">JsonNode</a> and
-					<a href="6a7bf4bc-bc71-2552-1358-7b43d521a19e.htm">JsonParser</a>) supported by three new
-					exception classes (<a href="8106d57c-35ef-9a5a-c52b-59521807d6cd.htm">JsonNode<span id="LST528BD03A_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DuplicateSiblingNameException</a>,
-					<a href="e0cb1f22-83c9-7478-0436-3c9dca6d6de9.htm">JsonNode<span id="LST528BD03A_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>MemberNotFoundException</a>, and
-					<a href="1ba660c1-d3d1-9e3a-bf48-63dcada993e5.htm">JsonNodeList<span id="LST528BD03A_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DuplicateItemException</a>)
-					and two enumerations (<a href="fd6bca50-6d65-90b0-01be-fb21f76d90c3.htm">JsonNode<span id="LST528BD03A_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction</a>
-					and <a href="b0ec3a4e-b4be-0d5b-027d-95122eca6bfe.htm">JsonValueType</a>).
-					These types all reside within the <a href="7bd08dc2-29b0-4afe-2367-e2ab25ba5857.htm">MichaelBrooks.UK.Json</a> namespace.
-				</p><ul><li><p><a href="100c332d-882f-4bd5-3f0f-96e5e924b21a.htm">JsonNode</a> objects are arranged
+					(<a href="FBD283DE.htm">JsonNode</a> and
+					<a href="BCC9B718.htm">JsonParser</a>) supported by three new
+					exception classes (<a href="2E527680.htm">JsonNode<span id="LST528BD03A_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DuplicateSiblingNameException</a>,
+					<a href="F53D067C.htm">JsonNode<span id="LST528BD03A_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>MemberNotFoundException</a>, and
+					<a href="3005741F.htm">JsonNodeList<span id="LST528BD03A_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DuplicateItemException</a>)
+					and two enumerations (<a href="69835C31.htm">JsonNode<span id="LST528BD03A_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction</a>
+					and <a href="5187F6AF.htm">JsonValueType</a>).
+					These types all reside within the <a href="43DC88.htm">MichaelBrooks.UK.Json</a> namespace.
+				</p><ul><li><p><a href="FBD283DE.htm">JsonNode</a> objects are arranged
 							as a hierarchical document object model (DOM) that represents
 							a JSON document. They can be so arranged explicitly or as a result of parsing
-							a JSON document via <a href="6a7bf4bc-bc71-2552-1358-7b43d521a19e.htm">JsonParser</a>.
+							a JSON document via <a href="BCC9B718.htm">JsonParser</a>.
 							A DOM can be serialised to a JSON string with various formatting options.
-						</p></li><li><p><a href="6a7bf4bc-bc71-2552-1358-7b43d521a19e.htm">JsonParser</a> is a static class
+						</p></li><li><p><a href="BCC9B718.htm">JsonParser</a> is a static class
 							whose sole purpose is to take a JSON string and parse it into a DOM comprising a hierarchy of
-							<a href="100c332d-882f-4bd5-3f0f-96e5e924b21a.htm">JsonNode</a> objects.
+							<a href="FBD283DE.htm">JsonNode</a> objects.
 						</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Consuming JSON</h2><div id="IDDABSection"><p>
 					This assembly currently only consumes JSON from a string. You do so via the
-					<a href="6a7bf4bc-bc71-2552-1358-7b43d521a19e.htm">JsonParser</a> static class, by
+					<a href="BCC9B718.htm">JsonParser</a> static class, by
 					calling one of its
-					<a href="3abd807d-bcf0-239c-9f09-a078cd68e549.htm">ParseJson</a>
+					<a href="E64FD746.htm">ParseJson</a>
 					methods, passing in the string that contains the JSON to be consumed. This
 					method also accepts an optional parameter which determines a nuance of navigation - explained further below.
 				</p><p>
 					The ParseJson method either returns a DOM (Document Object Model) if the JSON is valid, or throws an exception
-					if it isn't. The DOM is a hierarchy of <a href="100c332d-882f-4bd5-3f0f-96e5e924b21a.htm">JsonNode</a>
-					objects. Each <a href="100c332d-882f-4bd5-3f0f-96e5e924b21a.htm">JsonNode</a> has five properties:
-				</p><ul><li><p><a href="a65670d3-7b14-ff71-9fc1-b5c24951b2a8.htm">JsonName</a> - null for the root
+					if it isn't. The DOM is a hierarchy of <a href="FBD283DE.htm">JsonNode</a>
+					objects. Each <a href="FBD283DE.htm">JsonNode</a> has five properties:
+				</p><ul><li><p><a href="750FF66B.htm">JsonName</a> - null for the root
 							of the DOM.
-						</p></li><li><p><a href="403b4a49-625f-d677-fca9-79c81a610067.htm">JsonValueType</a> - which of the
+						</p></li><li><p><a href="BC415E5D.htm">JsonValueType</a> - which of the
 							seven defined JSON data types the node represents (object, array, string, number, true, false, null).
-						</p></li><li><p><a href="331f01ac-b272-8559-8dd3-98e3e362c911.htm">JsonValue</a> - not always populated;
+						</p></li><li><p><a href="EA8FF67B.htm">JsonValue</a> - not always populated;
 							see reference documentation for full details.
-						</p></li><li><p><a href="b7a308b3-2343-ace5-abe7-c100f7018982.htm">Parent</a> - null when this is the root node, otherwise references the parent node (which
+						</p></li><li><p><a href="AE3BE512.htm">Parent</a> - null when this is the root node, otherwise references the parent node (which
 							will be either of type object or array).
-						</p></li><li><p><a href="a6543321-3801-a1ff-a04d-ed5aed7f1a3c.htm">Children</a> - a list of members (if this node represents an object) or elements (if
+						</p></li><li><p><a href="AA6CD582.htm">Children</a> - a list of members (if this node represents an object) or elements (if
 							this node represents an array), or null.
 						</p></li></ul></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Navigation</h2><div id="IDEABSection"><p>
 					There are two mechanisms for navigating a DOM, which are covered below.
 					If you don't know the structure of the JSON that you are processing, your only choice is the first of these.
 				</p><ol><li><p>
-							The first is to use the <a href="b7a308b3-2343-ace5-abe7-c100f7018982.htm">Parent</a>
-							and <a href="a6543321-3801-a1ff-a04d-ed5aed7f1a3c.htm">Children</a> properties
-							of the nodes to navigate up and down the hierarchy, examining the <a href="a65670d3-7b14-ff71-9fc1-b5c24951b2a8.htm">JsonName</a>
-							and <a href="403b4a49-625f-d677-fca9-79c81a610067.htm">JsonValueType</a> for each node that you discover,
+							The first is to use the <a href="AE3BE512.htm">Parent</a>
+							and <a href="AA6CD582.htm">Children</a> properties
+							of the nodes to navigate up and down the hierarchy, examining the <a href="750FF66B.htm">JsonName</a>
+							and <a href="BC415E5D.htm">JsonValueType</a> for each node that you discover,
 							before deciding where to go next.
 							Note that the root node of the DOM has a null Parent property, and that only nodes representing objects or arrays
-							(which you can identify by checking the <a href="403b4a49-625f-d677-fca9-79c81a610067.htm">JsonValueType</a> property) will
+							(which you can identify by checking the <a href="BC415E5D.htm">JsonValueType</a> property) will
 							have a non-null Children property. If the object or array is empty, the Children property will be an empty list rather than null;
 							otherwise it will contain one member for each member of the object or element of the array.
 						</p></li><li><p>
@@ -97,19 +97,19 @@
 							pair of brackets you specify either the zero-based index of an array element or the name of an object member. The details
 							of each of these are as follows:
 						</p><ul><li><p>
-									[zero-based index] (see <a href="1638ebff-94ce-3b13-73e5-c2f007caa9a0.htm">Item<span id="LST528BD03A_4" data-languageSpecificText="cs=[|vb=(|cpp=[|nu=(|fs= "></span>Int32<span id="LST528BD03A_5" data-languageSpecificText="cs=]|vb=)|cpp=]|nu=)|fs= "></span></a>)
+									[zero-based index] (see <a href="7D32C518.htm">Item<span id="LST528BD03A_4" data-languageSpecificText="cs=[|vb=(|cpp=[|nu=(|fs= "></span>Int32<span id="LST528BD03A_5" data-languageSpecificText="cs=]|vb=)|cpp=]|nu=)|fs= "></span></a>)
 									- Works only with arrays. The usual rules of indexing apply, i.e. the index must be
 									within the bounds of the Children list.
 								</p></li><li><p>
-									[name] (see <a href="9d513cf3-80bd-d95a-fe2f-03ee05b24aea.htm">Item<span id="LST528BD03A_6" data-languageSpecificText="cs=[|vb=(|cpp=[|nu=(|fs= "></span>String<span id="LST528BD03A_7" data-languageSpecificText="cs=]|vb=)|cpp=]|nu=)|fs= "></span></a>)
+									[name] (see <a href="E3DE67B8.htm">Item<span id="LST528BD03A_6" data-languageSpecificText="cs=[|vb=(|cpp=[|nu=(|fs= "></span>String<span id="LST528BD03A_7" data-languageSpecificText="cs=]|vb=)|cpp=]|nu=)|fs= "></span></a>)
 									- Works only with objects. The name must match one of the members of the object, otherwise a
-									<a href="e0cb1f22-83c9-7478-0436-3c9dca6d6de9.htm">JsonNode<span id="LST528BD03A_8" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>MemberNotFoundException</a> is thrown.
+									<a href="F53D067C.htm">JsonNode<span id="LST528BD03A_8" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>MemberNotFoundException</a> is thrown.
 									If multiple objects with the same name exist as siblings, the behaviour depends on the value of the optional
-									<a href="fd6bca50-6d65-90b0-01be-fb21f76d90c3.htm">JsonNode<span id="LST528BD03A_9" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction</a>
+									<a href="69835C31.htm">JsonNode<span id="LST528BD03A_9" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction</a>
 									parameter passed to the ParseJson method when the DOM was created by parsing a JSON string (see
-									<a href="2b0bc810-51ec-046e-55d6-3b5ebe97815f.htm">ParseJson(String, JsonNode<span id="LST528BD03A_10" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction)</a>),
+									<a href="CC2AD9B0.htm">ParseJson(String, JsonNode<span id="LST528BD03A_10" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction)</a>),
 									or the optional parameter (same type) passed to the constructor of the JsonNode class when the parent node was created explicitly (see
-									<a href="e201bfc3-b8f6-76f5-fb4b-14396e956231.htm">JsonNode(JsonNode, JsonNode<span id="LST528BD03A_11" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction)</a>).
+									<a href="48AC616.htm">JsonNode(JsonNode, JsonNode<span id="LST528BD03A_11" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UnexpectedDuplicateSiblingReaction)</a>).
 								</p></li></ul><p>
 							So for example, consider that you have a DOM that represents the JSON shown below:
 						</p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">JSON</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-JSON">{
@@ -135,7 +135,7 @@
 							</p></div></article></li></ol></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Creating, modifying, and outputting JSON</h2><div id="IDFABSection"><p>
 					Once you have a DOM, you can modify it by adding, removing, or replacing nodes. You can also modify the JsonName and/or JsonValue of any node.
 				</p><p>
-					Also, you can create an entire DOM from scratch by instantiating <a href="100c332d-882f-4bd5-3f0f-96e5e924b21a.htm">JsonNode</a>
+					Also, you can create an entire DOM from scratch by instantiating <a href="FBD283DE.htm">JsonNode</a>
 					objects and arranging them in a hierarchy.
 				</p><article class="message is-warning"><div class="message-header"><p><span class="icon"><i class="fa fa-warning"></i></span>  Caution</p></div><div class="message-body"><p>
 						When explicitly instantiating nodes within a DOM, you have the option of specifying how you want each node to react if it later encounters
@@ -145,8 +145,8 @@
 					</p></div></article><p>
 					Once you have created the DOM, you can generate a JSON document as a string (using various formatting options) from any node, whereby that node
 					is treated as the root of the JSON document to be generated. This is achieved via the
-					<a href="676568eb-9a20-1c86-a4de-9cf9728eb190.htm">Serialise</a> methods.
-				</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b7c64ed4-33dc-479c-815e-8f145d21a352.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Overview</a></li><li><a class="quickLink">Data types</a></li><li><a class="quickLink">Consuming JSON</a></li><li><a class="quickLink">Navigation</a></li><li><a class="quickLink">Creating, modifying, and outputting JSON</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p>Copyright © Michael Brooks</p> 
+					<a href="59FC6F27.htm">Serialise</a> methods.
+				</p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="b7c64ed4-33dc-479c-815e-8f145d21a352.htm">Version History</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Overview</a></li><li><a class="quickLink">Data types</a></li><li><a class="quickLink">Consuming JSON</a></li><li><a class="quickLink">Navigation</a></li><li><a class="quickLink">Creating, modifying, and outputting JSON</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p>Copyright © Michael Brooks 2026</p> 
 				</div><div class="column"> 
 				</div></div></footer></div><script>$(function(){
 SetDefaultLanguage("cs");
