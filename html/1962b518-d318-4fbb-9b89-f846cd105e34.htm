@@ -143,7 +143,12 @@
 								<a href="https://datatracker.ietf.org/doc/rfc9535/" target="RFC9535" rel="noopener noreferrer">RFC9535</a>. The above-mentioned optional parameters that allow you to specify how you want JsonDOM to react when it
 								encounters multiple sibling members with the same name are my approach to addressing this.
 							</p></div></article></li></ol></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Creating, modifying, and outputting JSON</h2><div id="IDFABSection"><p>
-					Once you have a DOM, you can modify it by adding, removing, or replacing nodes. You can also modify the JsonName and/or JsonValue of any node.
+					Once you have a DOM, you can modify it by adding, removing, or replacing nodes. 
+					You can also modify the <a href="750FF66B.htm">JsonName</a> and/or 
+					<a href="EA8FF67B.htm">JsonValue</a> 
+					of any node, but there are constraints upon changing the
+					<a href="BC415E5D.htm">JsonValueType</a> 
+					property (see the reference documentation for details).
 				</p><p>
 					Also, you can create an entire DOM from scratch by instantiating <a href="FBD283DE.htm">JsonNode</a>
 					objects and arranging them in a hierarchy.
@@ -151,7 +156,7 @@
 						When explicitly instantiating nodes within a DOM, you have the option of specifying how you want each node to react if it later encounters
 						multiple sibling members with the same name when being navigated via the name-based index property (see above).
 						Although it's legal for you to configure different nodes to react differently, in most scenarios this is likely to be a source
-						of confusion and bugs, so I recommend that you choose one reaction and apply it consistently across all nodes in the DOM.
+						of confusion and bugs, so I recommend that you choose one reaction and apply it consistently across all nodes in your DOM.
 					</p></div></article><p>
 					Once you have created the DOM, you can generate a JSON document as a string (using various formatting options) from any node, whereby that node
 					is treated as the root of the JSON document to be generated. This is achieved via the
